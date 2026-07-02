@@ -5,160 +5,143 @@ Personal knowledge base for technical interviews.
 **Profile:** Java Full-Stack Developer (React + Spring Framework).
 **Goal:** Cover Computer Science fundamentals, system design, language/framework specifics, and behavioral topics through structured Markdown notes.
 
----
-
-## Architecture
-
-The repository is organized into 8 top-level sections. Each section groups related topics; each topic lives in its own folder or `.md` file.
-
-Legend: `✅` = note written · unmarked = planned placeholder.
-
-```
-Interview-Preparation/
-├── README.md                            ← this file (architecture index)
-│
-├── Meta/                                ← planning + soft skills
-│   ├── learning-path.md
-│   ├── weekly-plan.md
-│   ├── progress-checklist.md
-│   ├── STAR-method.md
-│   ├── leadership-principles.md
-│   ├── common-questions.md
-│   ├── salary-negotiation.md
-│   └── company-specific/
-│
-├── CS-Fundamentals/                     ← core Computer Science theory
-│   ├── Data-Structures/
-│   ├── Algorithms/
-│   ├── Complexity-Analysis/
-│   ├── Mathematics-for-CS/
-│   ├── Operating-Systems/
-│   ├── Computer-Networks/
-│   └── Distributed-Systems/
-│
-├── System-Design/                       ← interview-focused system design
-│   ├── High-Level-Design/
-│   │   ├── scaling-patterns.md
-│   │   ├── caching-strategies.md
-│   │   ├── load-balancing.md
-│   │   ├── database-sharding.md
-│   │   ├── message-queues.md
-│   │   └── case-studies/                ← Twitter, Uber, Netflix, WhatsApp
-│   ├── Low-Level-Design/
-│   │   ├── oop-design-principles.md
-│   │   ├── design-patterns/
-│   │   └── problems/                    ← Parking Lot, LRU Cache, URL Shortener
-│   └── API-Design/
-│       ├── rest-principles.md
-│       ├── graphql.md
-│       └── api-versioning.md
-│
-├── Java/                                ← Java language + Spring + Java-specific backend
-│   ├── core/                            ← OOP, Collections, Generics, Exceptions
-│   │   └── collections-hashmap-internals.md  ✅
-│   ├── modern-java/                     ← Streams, Lambdas, Records, Sealed, Virtual Threads
-│   │   └── stream-api.md                ✅
-│   ├── jvm-internals/                   ← Memory model, GC, JIT, ClassLoader
-│   │   └── memory-model-and-gc.md       ✅
-│   ├── concurrency/                     ← Threads, Executors, Locks, CompletableFuture
-│   │   ├── synchronized-and-volatile.md ✅
-│   │   └── executors-and-thread-pools.md ✅
-│   ├── spring/
-│   │   ├── core/                        ← IoC, DI, AOP, Bean lifecycle
-│   │   ├── boot/                        ← Auto-config, Starters, Actuator
-│   │   ├── data/                        ← JPA, Hibernate, Transactions
-│   │   │   ├── transactional-annotation.md  ✅
-│   │   │   └── n-plus-one-problem.md        ✅
-│   │   ├── security/                    ← Spring Security + AuthN/AuthZ (OAuth2, OIDC, JWT)
-│   │   └── cloud/                       ← Microservices patterns
-│   ├── rest-api/                        ← Spring MVC, WebFlux
-│   ├── messaging/                       ← Spring Kafka, Spring AMQP
-│   ├── testing/                         ← JUnit 5, Mockito, Testcontainers
-│   ├── build-tools/                     ← Maven, Gradle
-│   └── interview-questions.md
-│
-├── Frontend/                            ← JS/TS, React, and the web platform
-│   ├── JavaScript/                      ← ES6+, event-loop, closures, prototypes
-│   ├── TypeScript/                      ← type-system, generics, advanced-types
-│   ├── React/
-│   │   ├── fundamentals/
-│   │   ├── hooks/
-│   │   ├── state-management/
-│   │   ├── performance/
-│   │   ├── patterns/
-│   │   ├── testing/
-│   │   └── ssr-and-rsc/
-│   ├── HTML-CSS/
-│   ├── Browser-Internals/               ← + web-security.md (OWASP, XSS, CSRF, CORS, CSP)
-│   ├── Web-Performance/
-│   ├── Accessibility/
-│   └── Build-Tools/                     ← Vite, Webpack, esbuild
-│
-├── Databases/                           ← cross-cutting database knowledge
-│   ├── SQL/                             ← queries, joins, window functions
-│   ├── NoSQL/                           ← MongoDB, Cassandra, DynamoDB
-│   ├── Redis/                           ← caching patterns
-│   ├── Transactions/                    ← ACID, isolation levels
-│   ├── Indexing/
-│   ├── Replication-and-Sharding/
-│   └── CAP-Theorem/
-│
-├── DevOps-Cloud/                        ← infrastructure and operations
-│   ├── Docker/
-│   ├── Kubernetes/
-│   ├── CI-CD/                           ← GitHub Actions, Jenkins
-│   ├── AWS/                             ← EC2, S3, RDS, Lambda
-│   ├── Linux/
-│   ├── Monitoring/                      ← Prometheus, Grafana, ELK
-│   └── Infrastructure-as-Code/          ← Terraform, Ansible
-│
-└── Engineering-Practices/               ← software engineering methodology
-    ├── OOP/
-    ├── SOLID/
-    ├── Design-Patterns/                 ← GoF + architectural
-    ├── Clean-Code/
-    ├── Refactoring/
-    ├── Testing-Strategies/              ← Unit, Integration, E2E, TDD
-    ├── Git/
-    └── Agile-Methodologies/
-```
+Legend: ✅ note written · 📋 planned
 
 ---
 
-## Section Guide
+## Table of Contents
 
-### Meta
-Planning documents and soft-skill preparation. Learning paths, weekly plans, progress checklists. Behavioral interview content: STAR method, leadership principles, common questions, salary negotiation, company-specific notes.
+### Meta 📋
+Planning documents and soft-skill preparation.
 
-### CS-Fundamentals
-Core Computer Science theory — the academic foundation. Data structures, algorithms, complexity analysis, math for CS, operating systems, computer networks, and distributed systems theory (CAP, consensus, consistency models).
+- 📋 [Learning Path](./Meta/learning-path.md)
+- 📋 [Weekly Plan](./Meta/weekly-plan.md)
+- 📋 [Progress Checklist](./Meta/progress-checklist.md)
+- 📋 [STAR Method](./Meta/STAR-method.md)
+- 📋 [Leadership Principles](./Meta/leadership-principles.md)
+- 📋 [Common Questions](./Meta/common-questions.md)
+- 📋 [Salary Negotiation](./Meta/salary-negotiation.md)
+- 📋 [Company-Specific](./Meta/company-specific/)
 
-### System-Design
-Interview-focused system design content. **High-Level Design:** scaling patterns, caching, load balancing, sharding, message queues, real-world case studies. **Low-Level Design:** OOP principles, design patterns, classic problems (Parking Lot, LRU Cache, URL Shortener). **API Design:** REST, GraphQL, versioning.
+### CS-Fundamentals 📋
+Core Computer Science theory — the academic foundation.
 
-### Java
-Everything Java-related, including the Spring ecosystem and Java-specific backend topics. Language core, modern features, JVM internals, concurrency, Spring (Core, Boot, Data, Security, Cloud), REST API, messaging, testing, build tools. Spring Security also hosts general AuthN/AuthZ concepts (OAuth2, OIDC, JWT) used in this stack.
+- 📋 [Data Structures](./CS-Fundamentals/Data-Structures/)
+- 📋 [Algorithms](./CS-Fundamentals/Algorithms/)
+- 📋 [Complexity Analysis](./CS-Fundamentals/Complexity-Analysis/)
+- 📋 [Mathematics for CS](./CS-Fundamentals/Mathematics-for-CS/)
+- 📋 [Operating Systems](./CS-Fundamentals/Operating-Systems/)
+- 📋 [Computer Networks](./CS-Fundamentals/Computer-Networks/)
+- 📋 [Distributed Systems](./CS-Fundamentals/Distributed-Systems/)
 
-**Currently covered (Tier 1+2 for Middle Full-Stack):**
-- `core/collections-hashmap-internals.md` — HashMap structure, put/get, resize, treeification, ConcurrentHashMap
-- `modern-java/stream-api.md` — pipeline, intermediate/terminal ops, collectors, parallel streams, pitfalls
-- `jvm-internals/memory-model-and-gc.md` — memory areas, heap generations, GC algorithms, G1/ZGC/Shenandoah
-- `concurrency/synchronized-and-volatile.md` — JMM, happens-before, monitors, volatile, double-checked locking
-- `concurrency/executors-and-thread-pools.md` — ExecutorService, ThreadPoolExecutor, sizing, ForkJoinPool, CompletableFuture
-- `spring/data/transactional-annotation.md` — propagation, isolation, rollback rules, self-invocation, reactive
-- `spring/data/n-plus-one-problem.md` — OSIV, JOIN FETCH, @EntityGraph, @BatchSize, DTO projections
+### System-Design 📋
+Interview-focused system design content.
 
-### Frontend
-JavaScript, TypeScript, React, and the broader web platform. Browser internals also covers web security topics (OWASP Top 10, XSS, CSRF, CORS, CSP). Build tools covers Vite, Webpack, esbuild.
+- 📋 [High-Level Design](./System-Design/High-Level-Design/)
+  - 📋 [Scaling Patterns](./System-Design/High-Level-Design/scaling-patterns.md)
+  - 📋 [Caching Strategies](./System-Design/High-Level-Design/caching-strategies.md)
+  - 📋 [Load Balancing](./System-Design/High-Level-Design/load-balancing.md)
+  - 📋 [Database Sharding](./System-Design/High-Level-Design/database-sharding.md)
+  - 📋 [Message Queues](./System-Design/High-Level-Design/message-queues.md)
+  - 📋 [Case Studies](./System-Design/High-Level-Design/case-studies/) — Twitter, Uber, Netflix, WhatsApp
+- 📋 [Low-Level Design](./System-Design/Low-Level-Design/)
+  - 📋 [OOP Design Principles](./System-Design/Low-Level-Design/oop-design-principles.md)
+  - 📋 [Design Patterns](./System-Design/Low-Level-Design/design-patterns/)
+  - 📋 [Problems](./System-Design/Low-Level-Design/problems/) — Parking Lot, LRU Cache, URL Shortener
+- 📋 [API Design](./System-Design/API-Design/)
+  - 📋 [REST Principles](./System-Design/API-Design/rest-principles.md)
+  - 📋 [GraphQL](./System-Design/API-Design/graphql.md)
+  - 📋 [API Versioning](./System-Design/API-Design/api-versioning.md)
 
-### Databases
-Cross-cutting database knowledge. SQL and NoSQL engines, Redis for caching, transactions, indexing, replication, sharding, CAP theorem. ORM-specific notes (JPA/Hibernate) live in `Java/spring/data/`.
+### Java ✅ (in progress)
+Java language + Spring ecosystem + Java-specific backend topics.
 
-### DevOps-Cloud
-Infrastructure and operations. Containers, orchestration, CI/CD, AWS, Linux, monitoring, infrastructure as code.
+- [Core](./Java/core/) — OOP, Collections, Generics, Exceptions
+  - ✅ [HashMap Internals](./Java/core/collections-hashmap-internals.md)
+  - 📋 Equals & hashCode
+- [Modern Java](./Java/modern-java/) — Streams, Lambdas, Records, Sealed, Virtual Threads
+  - ✅ [Stream API](./Java/modern-java/stream-api.md)
+  - 📋 Lambda Expressions
+  - 📋 Optional
+  - 📋 Records & Sealed Classes
+- [JVM Internals](./Java/jvm-internals/) — Memory model, GC, JIT, ClassLoader
+  - ✅ [Memory Model and GC](./Java/jvm-internals/memory-model-and-gc.md)
+  - 📋 Class Loading
+  - 📋 JIT Compilation
+- [Concurrency](./Java/concurrency/) — Threads, Executors, Locks, CompletableFuture
+  - ✅ [synchronized and volatile](./Java/concurrency/synchronized-and-volatile.md)
+  - ✅ [Executors and Thread Pools](./Java/concurrency/executors-and-thread-pools.md)
+  - ✅ [Locks and Atomic](./Java/concurrency/locks-and-atomic.md)
+  - ✅ [CompletableFuture](./Java/concurrency/completable-future.md)
+  - ✅ [Virtual Threads](./Java/concurrency/virtual-threads.md)
+- [Spring](./Java/spring/)
+  - 📋 [Core](./Java/spring/core/) — IoC, DI, AOP, Bean lifecycle
+  - 📋 [Boot](./Java/spring/boot/) — Auto-config, Starters, Actuator
+  - [Data](./Java/spring/data/) — JPA, Hibernate, Transactions
+    - ✅ [@Transactional Deep Dive](./Java/spring/data/transactional-annotation.md)
+    - ✅ [N+1 Problem](./Java/spring/data/n-plus-one-problem.md)
+    - 📋 JPA & Hibernate Basics
+    - 📋 Connection Pooling
+  - 📋 [Security](./Java/spring/security/) — Spring Security + AuthN/AuthZ (OAuth2, OIDC, JWT)
+  - 📋 [Cloud](./Java/spring/cloud/) — Microservices patterns
+- 📋 [REST API](./Java/rest-api/) — Spring MVC, WebFlux
+- 📋 [Messaging](./Java/messaging/) — Spring Kafka, Spring AMQP
+- 📋 [Testing](./Java/testing/) — JUnit 5, Mockito, Testcontainers
+- 📋 [Build Tools](./Java/build-tools/) — Maven, Gradle
+- 📋 Interview Questions
 
-### Engineering-Practices
-Software engineering methodology. OOP, SOLID, design patterns, clean code, refactoring, testing strategies, Git, agile.
+### Frontend 📋
+JavaScript, TypeScript, React, and the web platform.
+
+- 📋 [JavaScript](./Frontend/JavaScript/) — ES6+, event-loop, closures, prototypes
+- 📋 [TypeScript](./Frontend/TypeScript/) — type-system, generics, advanced-types
+- 📋 [React](./Frontend/React/)
+  - 📋 [Fundamentals](./Frontend/React/fundamentals/)
+  - 📋 [Hooks](./Frontend/React/hooks/)
+  - 📋 [State Management](./Frontend/React/state-management/)
+  - 📋 [Performance](./Frontend/React/performance/)
+  - 📋 [Patterns](./Frontend/React/patterns/)
+  - 📋 [Testing](./Frontend/React/testing/)
+  - 📋 [SSR & RSC](./Frontend/React/ssr-and-rsc/)
+- 📋 [HTML-CSS](./Frontend/HTML-CSS/)
+- 📋 [Browser Internals](./Frontend/Browser-Internals/) — + web-security (OWASP, XSS, CSRF, CORS, CSP)
+- 📋 [Web Performance](./Frontend/Web-Performance/)
+- 📋 [Accessibility](./Frontend/Accessibility/)
+- 📋 [Build Tools](./Frontend/Build-Tools/) — Vite, Webpack, esbuild
+
+### Databases 📋
+Cross-cutting database knowledge.
+
+- 📋 [SQL](./Databases/SQL/) — queries, joins, window functions
+- 📋 [NoSQL](./Databases/NoSQL/) — MongoDB, Cassandra, DynamoDB
+- 📋 [Redis](./Databases/Redis/) — caching patterns
+- 📋 [Transactions](./Databases/Transactions/) — ACID, isolation levels
+- 📋 [Indexing](./Databases/Indexing/)
+- 📋 [Replication and Sharding](./Databases/Replication-and-Sharding/)
+- 📋 [CAP Theorem](./Databases/CAP-Theorem/)
+
+### DevOps-Cloud 📋
+Infrastructure and operations.
+
+- 📋 [Docker](./DevOps-Cloud/Docker/)
+- 📋 [Kubernetes](./DevOps-Cloud/Kubernetes/)
+- 📋 [CI/CD](./DevOps-Cloud/CI-CD/) — GitHub Actions, Jenkins
+- 📋 [AWS](./DevOps-Cloud/AWS/) — EC2, S3, RDS, Lambda
+- 📋 [Linux](./DevOps-Cloud/Linux/)
+- 📋 [Monitoring](./DevOps-Cloud/Monitoring/) — Prometheus, Grafana, ELK
+- 📋 [Infrastructure as Code](./DevOps-Cloud/Infrastructure-as-Code/) — Terraform, Ansible
+
+### Engineering-Practices 📋
+Software engineering methodology.
+
+- 📋 [OOP](./Engineering-Practices/OOP/)
+- 📋 [SOLID](./Engineering-Practices/SOLID/)
+- 📋 [Design Patterns](./Engineering-Practices/Design-Patterns/) — GoF + architectural
+- 📋 [Clean Code](./Engineering-Practices/Clean-Code/)
+- 📋 [Refactoring](./Engineering-Practices/Refactoring/)
+- 📋 [Testing Strategies](./Engineering-Practices/Testing-Strategies/) — Unit, Integration, E2E, TDD
+- 📋 [Git](./Engineering-Practices/Git/)
+- 📋 [Agile Methodologies](./Engineering-Practices/Agile-Methodologies/)
 
 ---
 
@@ -202,24 +185,22 @@ When a note is added, link to related notes in a `## Related` section rather tha
 
 ## Progress Tracking
 
-- [ ] Meta
-- [ ] CS-Fundamentals
-- [ ] System-Design
-- [~] Java — **7 notes written** (Tier 1+2 covered; see Section Guide above)
-- [ ] Frontend
-- [ ] Databases
-- [ ] DevOps-Cloud
-- [ ] Engineering-Practices
-
-Legend: `[ ]` not started · `[~]` in progress · `[x]` interview-ready.
+- 📋 Meta
+- 📋 CS-Fundamentals
+- 📋 System-Design
+- ✅ Java — 10 notes written (Tier 1+2 covered; **Concurrency folder complete**)
+- 📋 Frontend
+- 📋 Databases
+- 📋 DevOps-Cloud
+- 📋 Engineering-Practices
 
 ### Java — Next Priorities (Tier 2)
 
-- `Java/spring/core/bean-lifecycle.md` — IoC, DI, Bean lifecycle, scopes, AOP
-- `Java/rest-api/error-handling.md` — `@ControllerAdvice`, RFC 7807, validation, idempotency
-- `Java/spring/boot/autoconfiguration.md` — auto-config, starters, actuator
-- `Java/testing/junit-and-mockito.md` — JUnit 5, Mockito, Testcontainers
-- `Java/core/equals-and-hashcode.md` — contract deep dive
+- 📋 `Java/spring/core/bean-lifecycle.md` — IoC, DI, Bean lifecycle, scopes, AOP
+- 📋 `Java/rest-api/error-handling.md` — `@ControllerAdvice`, RFC 7807, validation, idempotency
+- 📋 `Java/spring/boot/autoconfiguration.md` — auto-config, starters, actuator
+- 📋 `Java/testing/junit-and-mockito.md` — JUnit 5, Mockito, Testcontainers
+- 📋 `Java/core/equals-and-hashcode.md` — contract deep dive
 
 ---
 

@@ -16,15 +16,11 @@ especially for high-concurrency code.
 
 ```java
 Lock lock = new ReentrantLock();
-lock.
-
-lock();
+lock.lock();
 try{
         // critical section
-        }finally{
-        lock.
-
-unlock();   // MUST be in finally — locks don't auto-release
+} finally {
+        lock.unlock();   // MUST be in finally — locks don't auto-release
 }
 ```
 
@@ -49,28 +45,25 @@ Non-blocking acquisition — useful for avoiding deadlocks:
 
 ```java
 if(lock.tryLock()){
-        try{ /* got it */ }
-        finally{lock.
-
-unlock(); }
-        }else{
-        // didn't get it, do something else
-        }
+    try { /* got it */ }
+    finally{ 
+        lock.unlock();
+    }
+} else {
+    // didn't get it, do something else
+}
 ```
 
 Timed variant for deadlock avoidance:
 
 ```java
-if(lock1.tryLock(1,SECONDS) &&lock2.
-
-tryLock(1,SECONDS)){
-        try{ /* both held */ }
-        finally{lock1.
-
-unlock(); lock2.
-
-unlock(); }
+if(lock1.tryLock(1,SECONDS) && lock2.tryLock(1,SECONDS)){
+        try { /* both held */ }
+        finally {
+            lock1.unlock(); 
+            lock2.unlock();
         }
+}
 ```
 
 ## synchronized vs ReentrantLock
@@ -98,16 +91,8 @@ Separates read and write locks:
 
 ```java
 ReentrantReadWriteLock rw = new ReentrantReadWriteLock();
-rw.
-
-readLock().
-
-lock();   // shared
-rw.
-
-writeLock().
-
-lock();  // exclusive
+rw.readLock().lock();   // shared
+rw.writeLock().lock();  // exclusive
 ```
 
 **Caveats:**
@@ -208,12 +193,8 @@ sums them on read:
 
 ```java
 LongAdder counter = new LongAdder();
-counter.
-
-increment();    // writes to a cell, not the shared field
-counter.
-
-sum();          // sum of all cells
+counter.increment();    // writes to a cell, not the shared field
+counter.sum();          // sum of all cells
 ```
 
 Trade-off: faster writes, slower reads, higher memory. Perfect for metrics / counters read rarely.

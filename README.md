@@ -56,14 +56,19 @@ Interview-focused system design content.
 ### Java ✅ (in progress)
 Java language + Spring ecosystem + Java-specific backend topics.
 
-- [Core](./Java/core/) — OOP, Collections, Generics, Exceptions
+- [Core](./Java/core/) — OOP, Collections, Generics, Exceptions, Streams, Lambdas, Optional
   - ✅ [HashMap Internals](./Java/core/collections-hashmap-internals.md)
+  - ✅ [Stream API](./Java/core/stream-api.md)
   - 📋 Equals & hashCode
-- [Modern Java](./Java/modern-java/) — Streams, Lambdas, Records, Sealed, Virtual Threads
-  - ✅ [Stream API](./Java/modern-java/stream-api.md)
   - 📋 Lambda Expressions
   - 📋 Optional
   - 📋 Records & Sealed Classes
+- [Modern Java](./Java/modern-java/) — key changes per LTS version
+  - ✅ [Java 8 LTS](./Java/modern-java/java-8-lts.md) — lambdas, Streams, Optional, java.time
+  - ✅ [Java 11 LTS](./Java/modern-java/java-11-lts.md) — var, HTTP Client, String methods
+  - ✅ [Java 17 LTS](./Java/modern-java/java-17-lts.md) — records, sealed, pattern matching, text blocks
+  - ✅ [Java 21 LTS](./Java/modern-java/java-21-lts.md) — virtual threads, pattern matching for switch
+  - ✅ [Java 25 LTS](./Java/modern-java/java-25-lts.md) — synchronized without pinning, scoped values, structured concurrency
 - [JVM Internals](./Java/jvm-internals/) — Memory model, GC, JIT, ClassLoader
   - ✅ [Memory Model and GC](./Java/jvm-internals/memory-model-and-gc.md)
   - 📋 Class Loading
@@ -188,7 +193,7 @@ When a note is added, link to related notes in a `## Related` section rather tha
 - 📋 Meta
 - 📋 CS-Fundamentals
 - 📋 System-Design
-- ✅ Java — 10 notes written (Tier 1+2 covered; **Concurrency folder complete**)
+- ✅ Java — 15 notes written (Tier 1+2 covered; **Concurrency folder complete**, **Modern Java LTS versions complete**)
 - 📋 Frontend
 - 📋 Databases
 - 📋 DevOps-Cloud

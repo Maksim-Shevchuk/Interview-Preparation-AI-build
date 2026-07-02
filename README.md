@@ -11,6 +11,8 @@ Personal knowledge base for technical interviews.
 
 The repository is organized into 8 top-level sections. Each section groups related topics; each topic lives in its own folder or `.md` file.
 
+Legend: `✅` = note written · unmarked = planned placeholder.
+
 ```
 Interview-Preparation/
 ├── README.md                            ← this file (architecture index)
@@ -53,13 +55,20 @@ Interview-Preparation/
 │
 ├── Java/                                ← Java language + Spring + Java-specific backend
 │   ├── core/                            ← OOP, Collections, Generics, Exceptions
+│   │   └── collections-hashmap-internals.md  ✅
 │   ├── modern-java/                     ← Streams, Lambdas, Records, Sealed, Virtual Threads
+│   │   └── stream-api.md                ✅
 │   ├── jvm-internals/                   ← Memory model, GC, JIT, ClassLoader
+│   │   └── memory-model-and-gc.md       ✅
 │   ├── concurrency/                     ← Threads, Executors, Locks, CompletableFuture
+│   │   ├── synchronized-and-volatile.md ✅
+│   │   └── executors-and-thread-pools.md ✅
 │   ├── spring/
 │   │   ├── core/                        ← IoC, DI, AOP, Bean lifecycle
 │   │   ├── boot/                        ← Auto-config, Starters, Actuator
 │   │   ├── data/                        ← JPA, Hibernate, Transactions
+│   │   │   ├── transactional-annotation.md  ✅
+│   │   │   └── n-plus-one-problem.md        ✅
 │   │   ├── security/                    ← Spring Security + AuthN/AuthZ (OAuth2, OIDC, JWT)
 │   │   └── cloud/                       ← Microservices patterns
 │   ├── rest-api/                        ← Spring MVC, WebFlux
@@ -130,6 +139,15 @@ Interview-focused system design content. **High-Level Design:** scaling patterns
 ### Java
 Everything Java-related, including the Spring ecosystem and Java-specific backend topics. Language core, modern features, JVM internals, concurrency, Spring (Core, Boot, Data, Security, Cloud), REST API, messaging, testing, build tools. Spring Security also hosts general AuthN/AuthZ concepts (OAuth2, OIDC, JWT) used in this stack.
 
+**Currently covered (Tier 1+2 for Middle Full-Stack):**
+- `core/collections-hashmap-internals.md` — HashMap structure, put/get, resize, treeification, ConcurrentHashMap
+- `modern-java/stream-api.md` — pipeline, intermediate/terminal ops, collectors, parallel streams, pitfalls
+- `jvm-internals/memory-model-and-gc.md` — memory areas, heap generations, GC algorithms, G1/ZGC/Shenandoah
+- `concurrency/synchronized-and-volatile.md` — JMM, happens-before, monitors, volatile, double-checked locking
+- `concurrency/executors-and-thread-pools.md` — ExecutorService, ThreadPoolExecutor, sizing, ForkJoinPool, CompletableFuture
+- `spring/data/transactional-annotation.md` — propagation, isolation, rollback rules, self-invocation, reactive
+- `spring/data/n-plus-one-problem.md` — OSIV, JOIN FETCH, @EntityGraph, @BatchSize, DTO projections
+
 ### Frontend
 JavaScript, TypeScript, React, and the broader web platform. Browser internals also covers web security topics (OWASP Top 10, XSS, CSRF, CORS, CSP). Build tools covers Vite, Webpack, esbuild.
 
@@ -187,13 +205,21 @@ When a note is added, link to related notes in a `## Related` section rather tha
 - [ ] Meta
 - [ ] CS-Fundamentals
 - [ ] System-Design
-- [ ] Java
+- [~] Java — **7 notes written** (Tier 1+2 covered; see Section Guide above)
 - [ ] Frontend
 - [ ] Databases
 - [ ] DevOps-Cloud
 - [ ] Engineering-Practices
 
-Mark a section as in-progress when you start adding notes; mark as complete when coverage feels interview-ready.
+Legend: `[ ]` not started · `[~]` in progress · `[x]` interview-ready.
+
+### Java — Next Priorities (Tier 2)
+
+- `Java/spring/core/bean-lifecycle.md` — IoC, DI, Bean lifecycle, scopes, AOP
+- `Java/rest-api/error-handling.md` — `@ControllerAdvice`, RFC 7807, validation, idempotency
+- `Java/spring/boot/autoconfiguration.md` — auto-config, starters, actuator
+- `Java/testing/junit-and-mockito.md` — JUnit 5, Mockito, Testcontainers
+- `Java/core/equals-and-hashcode.md` — contract deep dive
 
 ---
 

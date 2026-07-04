@@ -49,7 +49,7 @@ Interview-focused system design content.
   - 📋 [Design Patterns](./System-Design/Low-Level-Design/design-patterns/)
   - 📋 [Problems](./System-Design/Low-Level-Design/problems/) — Parking Lot, LRU Cache, URL Shortener
 - 📋 [API Design](./System-Design/API-Design/)
-  - 📋 [REST Principles](./System-Design/API-Design/rest-principles.md)
+  - ✅ [REST Principles](./System-Design/API-Design/rest-principles.md)
   - 📋 [GraphQL](./System-Design/API-Design/graphql.md)
   - 📋 [API Versioning](./System-Design/API-Design/api-versioning.md)
 
@@ -74,9 +74,12 @@ Java language + Spring ecosystem + Java-specific backend topics.
   - 📋 Class Loading
   - 📋 JIT Compilation
 - [Concurrency](./Java/concurrency/) — Threads, Executors, Locks, CompletableFuture
+  - ✅ [Thread Fundamentals](./Java/concurrency/thread-fundamentals.md)
   - ✅ [synchronized and volatile](./Java/concurrency/synchronized-and-volatile.md)
-  - ✅ [Executors and Thread Pools](./Java/concurrency/executors-and-thread-pools.md)
   - ✅ [Locks and Atomic](./Java/concurrency/locks-and-atomic.md)
+  - ✅ [Concurrent Collections](./Java/concurrency/concurrent-collections.md)
+  - ✅ [Synchronization Primitives](./Java/concurrency/synchronization-primitives.md)
+  - ✅ [Executors and Thread Pools](./Java/concurrency/executors-and-thread-pools.md)
   - ✅ [CompletableFuture](./Java/concurrency/completable-future.md)
   - ✅ [Virtual Threads](./Java/concurrency/virtual-threads.md)
 - [Spring](./Java/spring/)
@@ -88,9 +91,14 @@ Java language + Spring ecosystem + Java-specific backend topics.
     - 📋 JPA & Hibernate Basics
     - 📋 Connection Pooling
   - 📋 [Security](./Java/spring/security/) — Spring Security + AuthN/AuthZ (OAuth2, OIDC, JWT)
-  - 📋 [Cloud](./Java/spring/cloud/) — Microservices patterns
-- 📋 [REST API](./Java/rest-api/) — Spring MVC, WebFlux
-- 📋 [Messaging](./Java/messaging/) — Spring Kafka, Spring AMQP
+  - [Cloud](./Java/spring/cloud/) — Microservices patterns
+    - ✅ [Microservices Architecture](./Java/spring/cloud/microservices-architecture.md)
+    - ✅ [Spring Cloud Ecosystem](./Java/spring/cloud/spring-cloud-ecosystem.md)
+- [REST API](./Java/rest-api/) — Spring MVC, WebFlux
+  - ✅ [Spring REST API](./Java/rest-api/spring-rest-api.md)
+- [Messaging](./Java/messaging/) — Spring Kafka, Spring AMQP
+  - ✅ [Apache Kafka](./Java/messaging/apache-kafka.md)
+  - ✅ [RabbitMQ](./Java/messaging/rabbitmq.md)
 - 📋 [Testing](./Java/testing/) — JUnit 5, Mockito, Testcontainers
 - 📋 [Build Tools](./Java/build-tools/) — Maven, Gradle
 - 📋 Interview Questions
@@ -98,18 +106,35 @@ Java language + Spring ecosystem + Java-specific backend topics.
 ### Frontend 📋
 JavaScript, TypeScript, React, and the web platform.
 
-- 📋 [JavaScript](./Frontend/JavaScript/) — ES6+, event-loop, closures, prototypes
-- 📋 [TypeScript](./Frontend/TypeScript/) — type-system, generics, advanced-types
-- 📋 [React](./Frontend/React/)
-  - 📋 [Fundamentals](./Frontend/React/fundamentals/)
-  - 📋 [Hooks](./Frontend/React/hooks/)
-  - 📋 [State Management](./Frontend/React/state-management/)
-  - 📋 [Performance](./Frontend/React/performance/)
-  - 📋 [Patterns](./Frontend/React/patterns/)
-  - 📋 [Testing](./Frontend/React/testing/)
-  - 📋 [SSR & RSC](./Frontend/React/ssr-and-rsc/)
+- [JavaScript](./Frontend/JavaScript/) — ES6+, event-loop, closures, prototypes
+  - ✅ [Types and Coercion](./Frontend/JavaScript/types-and-coercion.md)
+  - ✅ [Closures and Scope](./Frontend/JavaScript/closures-and-scope.md)
+  - ✅ [Prototypes and `this`](./Frontend/JavaScript/prototypes-and-this.md)
+  - ✅ [Event Loop](./Frontend/JavaScript/event-loop.md)
+  - ✅ [Promises and Async/Await](./Frontend/JavaScript/promises-and-async-await.md)
+  - ✅ [ES6+ Features](./Frontend/JavaScript/es6-features.md)
+  - ✅ [Property Descriptors](./Frontend/JavaScript/property-descriptors.md)
+- [TypeScript](./Frontend/TypeScript/) — type-system, generics, advanced-types
+  - ✅ [Type System Basics](./Frontend/TypeScript/type-system-basics.md)
+  - ✅ [Interfaces vs Type Aliases](./Frontend/TypeScript/interfaces-vs-types.md)
+  - ✅ [Generics](./Frontend/TypeScript/generics.md)
+  - ✅ [Advanced Types](./Frontend/TypeScript/advanced-types.md)
+  - ✅ [Type Narrowing](./Frontend/TypeScript/type-narrowing.md)
+- [React](./Frontend/React/)
+  - ✅ [Components, JSX, and Virtual DOM](./Frontend/React/fundamentals/components-jsx-and-virtual-dom.md)
+  - ✅ [Synthetic Events — React vs Native](./Frontend/React/fundamentals/synthetic-events.md)
+  - ✅ [Portals and Refs](./Frontend/React/fundamentals/portals-and-refs.md)
+  - ✅ [Hooks in Depth](./Frontend/React/hooks/hooks-in-depth.md)
+  - ✅ [State Management](./Frontend/React/state-management/state-management.md)
+  - ✅ [Redux Toolkit — Deep Dive](./Frontend/React/state-management/redux-toolkit.md)
+  - ✅ [Performance Optimization](./Frontend/React/performance/performance-optimization.md)
+  - ✅ [Component Patterns](./Frontend/React/patterns/component-patterns.md)
+  - ✅ [SSR, SSG, and RSC](./Frontend/React/ssr-and-rsc/ssr-ssg-and-rsc.md)
+  - ✅ [React Testing](./Frontend/React/testing/react-testing.md)
 - 📋 [HTML-CSS](./Frontend/HTML-CSS/)
-- 📋 [Browser Internals](./Frontend/Browser-Internals/) — + web-security (OWASP, XSS, CSRF, CORS, CSP)
+- [Browser Internals](./Frontend/Browser-Internals/) — + web-security (OWASP, XSS, CSRF, CORS, CSP)
+  - ✅ [Web Storage and Cookies](./Frontend/Browser-Internals/web-storage-and-cookies.md)
+  - ✅ [Web Workers and Service Workers](./Frontend/Browser-Internals/web-workers-and-service-workers.md)
 - 📋 [Web Performance](./Frontend/Web-Performance/)
 - 📋 [Accessibility](./Frontend/Accessibility/)
 - 📋 [Build Tools](./Frontend/Build-Tools/) — Vite, Webpack, esbuild
@@ -140,7 +165,9 @@ Infrastructure and operations.
 Software engineering methodology.
 
 - 📋 [OOP](./Engineering-Practices/OOP/)
-- 📋 [SOLID](./Engineering-Practices/SOLID/)
+- [SOLID](./Engineering-Practices/SOLID/)
+  - ✅ [SOLID Principles](./Engineering-Practices/SOLID/solid-principles.md)
+  - ✅ [GRASP Principles](./Engineering-Practices/SOLID/grasp-principles.md)
 - 📋 [Design Patterns](./Engineering-Practices/Design-Patterns/) — GoF + architectural
 - 📋 [Clean Code](./Engineering-Practices/Clean-Code/)
 - 📋 [Refactoring](./Engineering-Practices/Refactoring/)

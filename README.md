@@ -83,8 +83,10 @@ Java language + Spring ecosystem + Java-specific backend topics.
   - ✅ [CompletableFuture](./Java/concurrency/completable-future.md)
   - ✅ [Virtual Threads](./Java/concurrency/virtual-threads.md)
 - [Spring](./Java/spring/)
-  - 📋 [Core](./Java/spring/core/) — IoC, DI, AOP, Bean lifecycle
-  - 📋 [Boot](./Java/spring/boot/) — Auto-config, Starters, Actuator
+  - [Core](./Java/spring/core/) — IoC, DI, AOP, Bean lifecycle
+    - ✅ [Spring Core](./Java/spring/core/spring-core.md) — IoC, DI, AOP, Bean lifecycle, scopes
+  - [Boot](./Java/spring/boot/) — Auto-config, Starters, Actuator
+    - ✅ [Spring Boot](./Java/spring/boot/spring-boot.md) — auto-config, starters, actuator
   - [Data](./Java/spring/data/) — JPA, Hibernate, Transactions
     - ✅ [@Transactional Deep Dive](./Java/spring/data/transactional-annotation.md)
     - ✅ [N+1 Problem](./Java/spring/data/n-plus-one-problem.md)
@@ -131,21 +133,32 @@ JavaScript, TypeScript, React, and the web platform.
   - ✅ [Component Patterns](./Frontend/React/patterns/component-patterns.md)
   - ✅ [SSR, SSG, and RSC](./Frontend/React/ssr-and-rsc/ssr-ssg-and-rsc.md)
   - ✅ [React Testing](./Frontend/React/testing/react-testing.md)
-- 📋 [HTML-CSS](./Frontend/HTML-CSS/)
+- [HTML-CSS](./Frontend/HTML-CSS/)
+  - ✅ [Semantic HTML](./Frontend/HTML-CSS/semantic-html.md)
+  - ✅ [Box Model, Positioning, Selectors](./Frontend/HTML-CSS/box-model-positioning-selectors.md)
+  - ✅ [Flexbox and Grid](./Frontend/HTML-CSS/flexbox-and-grid.md)
+  - ✅ [Sass — Preprocessor & Code Generation](./Frontend/HTML-CSS/sass.md) — mixins, functions, @use modules, generated utilities
 - [Browser Internals](./Frontend/Browser-Internals/) — + web-security (OWASP, XSS, CSRF, CORS, CSP)
   - ✅ [Web Storage and Cookies](./Frontend/Browser-Internals/web-storage-and-cookies.md)
   - ✅ [Web Workers and Service Workers](./Frontend/Browser-Internals/web-workers-and-service-workers.md)
-- 📋 [Web Performance](./Frontend/Web-Performance/)
-- 📋 [Accessibility](./Frontend/Accessibility/)
+- [Web Performance](./Frontend/Web-Performance/)
+  - ✅ [Web Performance](./Frontend/Web-Performance/web-performance.md)
+- [Accessibility](./Frontend/Accessibility/)
+  - ✅ [Web Accessibility](./Frontend/Accessibility/web-accessibility.md)
 - 📋 [Build Tools](./Frontend/Build-Tools/) — Vite, Webpack, esbuild
+- [Testing](./Frontend/Testing/)
+  - ✅ [Jest and React Testing Library](./Frontend/Testing/jest-and-react-testing-library.md)
 
 ### Databases 📋
 Cross-cutting database knowledge.
 
-- 📋 [SQL](./Databases/SQL/) — queries, joins, window functions
+- [SQL](./Databases/SQL/) — queries, joins, window functions
+  - ✅ [SQL Fundamentals](./Databases/SQL/sql-fundamentals.md)
+  - ✅ [EXPLAIN and Query Optimization](./Databases/SQL/explain-and-query-optimization.md)
 - 📋 [NoSQL](./Databases/NoSQL/) — MongoDB, Cassandra, DynamoDB
 - 📋 [Redis](./Databases/Redis/) — caching patterns
-- 📋 [Transactions](./Databases/Transactions/) — ACID, isolation levels
+- [Transactions](./Databases/Transactions/) — ACID, isolation levels
+  - ✅ [Transactions and Isolation Levels](./Databases/Transactions/transactions-and-isolation-levels.md)
 - 📋 [Indexing](./Databases/Indexing/)
 - 📋 [Replication and Sharding](./Databases/Replication-and-Sharding/)
 - 📋 [CAP Theorem](./Databases/CAP-Theorem/)
@@ -153,13 +166,17 @@ Cross-cutting database knowledge.
 ### DevOps-Cloud 📋
 Infrastructure and operations.
 
-- 📋 [Docker](./DevOps-Cloud/Docker/)
-- 📋 [Kubernetes](./DevOps-Cloud/Kubernetes/)
+- [Docker](./DevOps-Cloud/Docker/)
+  - ✅ [Docker Core Concepts](./DevOps-Cloud/Docker/docker-core-concepts.md)
+- [Kubernetes](./DevOps-Cloud/Kubernetes/)
+  - ✅ [Kubernetes Core Concepts](./DevOps-Cloud/Kubernetes/kubernetes-core-concepts.md)
 - 📋 [CI/CD](./DevOps-Cloud/CI-CD/) — GitHub Actions, Jenkins
 - 📋 [AWS](./DevOps-Cloud/AWS/) — EC2, S3, RDS, Lambda
 - 📋 [Linux](./DevOps-Cloud/Linux/)
 - 📋 [Monitoring](./DevOps-Cloud/Monitoring/) — Prometheus, Grafana, ELK
 - 📋 [Infrastructure as Code](./DevOps-Cloud/Infrastructure-as-Code/) — Terraform, Ansible
+- [SaaS](./DevOps-Cloud/SaaS/)
+  - ✅ [SaaS — Software as a Service](./DevOps-Cloud/SaaS/saas.md) — multi-tenancy, billing, code generation
 
 ### Engineering-Practices 📋
 Software engineering methodology.

@@ -52,6 +52,8 @@ Interview-focused system design content.
   - ✅ [REST Principles](./System-Design/API-Design/rest-principles.md)
   - 📋 [GraphQL](./System-Design/API-Design/graphql.md)
   - 📋 [API Versioning](./System-Design/API-Design/api-versioning.md)
+- [Domain Design](./System-Design/Domain-Design/) — regulated & industry-specific
+  - ✅ [Healthcare Auth — GDPR / HIPAA](./System-Design/Domain-Design/healthcare-auth-gdpr-hipaa.md)
 
 ### Java ✅ (in progress)
 Java language + Spring ecosystem + Java-specific backend topics.
@@ -76,12 +78,14 @@ Java language + Spring ecosystem + Java-specific backend topics.
 - [Concurrency](./Java/concurrency/) — Threads, Executors, Locks, CompletableFuture
   - ✅ [Thread Fundamentals](./Java/concurrency/thread-fundamentals.md)
   - ✅ [synchronized and volatile](./Java/concurrency/synchronized-and-volatile.md)
+  - ✅ [The happens-before Relationship](./Java/concurrency/happens-before.md)
   - ✅ [Locks and Atomic](./Java/concurrency/locks-and-atomic.md)
   - ✅ [Concurrent Collections](./Java/concurrency/concurrent-collections.md)
   - ✅ [Synchronization Primitives](./Java/concurrency/synchronization-primitives.md)
   - ✅ [Executors and Thread Pools](./Java/concurrency/executors-and-thread-pools.md)
   - ✅ [CompletableFuture](./Java/concurrency/completable-future.md)
   - ✅ [Virtual Threads](./Java/concurrency/virtual-threads.md)
+  - ✅ [Thread Tracing & Diagnostics](./Java/concurrency/thread-tracing-and-diagnostics.md)
 - [Spring](./Java/spring/)
   - [Core](./Java/spring/core/) — IoC, DI, AOP, Bean lifecycle
     - ✅ [Spring Core](./Java/spring/core/spring-core.md) — IoC, DI, AOP, Bean lifecycle, scopes
@@ -155,7 +159,8 @@ Cross-cutting database knowledge.
 - [SQL](./Databases/SQL/) — queries, joins, window functions
   - ✅ [SQL Fundamentals](./Databases/SQL/sql-fundamentals.md)
   - ✅ [EXPLAIN and Query Optimization](./Databases/SQL/explain-and-query-optimization.md)
-- 📋 [NoSQL](./Databases/NoSQL/) — MongoDB, Cassandra, DynamoDB
+- [NoSQL](./Databases/NoSQL/) — MongoDB, Cassandra, DynamoDB
+  - ✅ [Performance Issues — Diagnosis and Resolution](./Databases/NoSQL/performance-issues.md)
 - 📋 [Redis](./Databases/Redis/) — caching patterns
 - [Transactions](./Databases/Transactions/) — ACID, isolation levels
   - ✅ [Transactions and Isolation Levels](./Databases/Transactions/transactions-and-isolation-levels.md)
